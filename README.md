@@ -118,35 +118,36 @@
 
 ## 4. 更多个性化定制
 
-       mNavMenuLayout.setIconRes(iconRes)//设置未选中图标
-                .setIconResSelected(iconResSelected)//设置选中图标
-                .setTextRes(textRes)//设置文字
-                .setIconSize(60, 60)//设置图标大小
-                .setIconSize(0, 70,70)
-                .setTextSize(20)//设置文字大小
-                .setTextSize(0, 20)
-                .setTextColor(Color.GRAY)//未选中状态下文字颜色
-                .setTextColorSelected(Color.RED)//选中状态下文字颜色
-                .setBackColor(Color.WHITE)//设置背景色
-                .setBackColor(2,Color.RED)
-                .setMarginTop(PixelUtil.dpToPx(MainActivity.this, 5))//文字和图标直接的距离，默认为5dp
-                .setMarginTop(1, PixelUtil.dpToPx(MainActivity.this, 10))
-                .setSelected(0);//设置选中的位置
+    mNavMenuLayout.setIconRes(iconRes)//设置未选中图标
+                  .setIconResSelected(iconResSelected)//设置选中图标
+                  .setTextRes(textRes)//设置文字
+                  .setIconSize(60, 60)//设置图标大小
+                  .setIconSize(0, 70,70)
+                  .setTextSize(20)//设置文字大小
+                  .setTextSize(0, 20)
+                  .setTextColor(Color.GRAY)//未选中状态下文字颜色
+                  .setTextColorSelected(Color.RED)//选中状态下文字颜色
+                  .setBackColor(Color.WHITE)//设置背景色
+                  .setBackColor(2,Color.RED)
+                  .setMarginTop(PixelUtil.dpToPx(MainActivity.this, 5))//文字和图标直接的距离，默认为5dp
+                  .setMarginTop(1, PixelUtil.dpToPx(MainActivity.this, 10))
+                  .setSelected(0);//设置选中的位置
                 
 注：
-    
+
     以设置图标大小为例，有两个重载方法，
-     setIconSize(60, 60) 表示将图标宽高设为 60 * 60，此效果针对于底部所有的item，即底部所有图标大小都会是 60 * 60
-    .setIconSize(0, 70,70) 第一个参数代表位置，表示针对将底部哪一个item的图标进行设置
+    setIconSize(60, 60) 表示将图标宽高设为 60 * 60，此效果针对于底部所有的item，即底部所有图标大小都会是 60 * 60
+    .setIconSize(0, 70,70) 第一个参数代表位置，表示针对将底部哪一个item的图标进行设置
     
 ## 报错处理
 
-    假如在使用过程中出现了无法显示或者是显示效果不正确等问题，请查看Log,里面会有报错提示。
+    假如在使用过程中出现了无法显示或者是显示效果不正确等问题，请查看Log,里面会有报错提示。
     
-    例如：
-     如果没有在xml中声明  app:menuCount="" 属性 或者是 属性的值 小于1 ,就会在LogCat中看到这样的提示：
+     例如：
      
-     03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the menuCount mast greater than 0
+     如果没有在xml中声明  app:menuCount="" 属性 或者是 属性的值 小于1 ,就会在LogCat中看到这样的提示：
+     
+     03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the menuCount mast greater than 0
      03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the iconRes length is not equals count
      03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the iconResSelected length is not equals count
      03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the textRes length is not equals count
