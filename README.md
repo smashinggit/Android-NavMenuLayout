@@ -1,23 +1,23 @@
 # Android-NavMenu-master
 
-
 ### 一个底部导航栏, 实现了显示未读消息数, 显示红点等效果的封装。
 
 # 添加依赖
 
 #### 1. 在项目根目录的 build.gradle 中添加
 
-    allprojects {
-      repositories {
-        ...
-        maven { url 'https://jitpack.io' }
-      }
-    }
+    allprojects {
+       repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+      }
+   }
 
+  
 #### 2. 在项目的 build.gradle 中添加
 
     compile 'com.github.smashinggit:Android-NavMenu-master:v1.0.2'
-
+ 
 
 # 如何使用
 
@@ -26,29 +26,35 @@
 
 #### 第一步, 在xml文件中添加控件
 
-     在xml的根布局添加  xmlns:app="http://schemas.android.com/apk/res-auto"
+       在xml中的跟布局添加  xmxmlns:app="http://schemas.android.com/apk/res-auto"
       
-      <com.smashing.navmenu.NavMenuLayout
-        android:id="@+id/nav_layout"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:menuCount="3" />
+        <com.git.navmenu.NavMenuLayout
+        android:id="@+id/nav_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:menuCount="3" />
 
 注：
 
-       app:menuCount="3" 属性是必须要添加的，代表底部菜单的数量，此数值必须要与 Activity 中设置的图片资源，文字资源的数量一致，
-       否则无法正常显示
-
+     
+     app:menuCount="3" 属性是必须要添加的，代表底部菜单的数量，此数值必须要与 Activity 中设置的图片资源，文字资源的数量一致，
+     否则无法正常显示
+      
+       
+       
+       
 #### 第二步, 在Activity中设置数据
 
-       private int[] iconRes = {R.mipmap.ic_home_normal, R.mipmap.ic_managemoney_normal, R.mipmap.ic_me_normal};
-       private int[] iconResSelected = {R.mipmap.ic_home_selected, R.mipmap.ic_managemoney_select, R.mipmap.ic_me_select};
-       private String[] textRes = {"首页", "理财", "个人中心"};
+      private int[] iconRes = {R.mipmap.ic_home_normal, R.mipmap.ic_managemoney_normal, R.mipmap.ic_me_normal};
+      private int[] iconResSelected = {R.mipmap.ic_home_selected, R.mipmap.ic_managemoney_select, R.mipmap.ic_me_select};
+      private String[] textRes = {"首页", "理财", "个人中心"};
 
-        mNavMenuLayout.setIconRes(iconRes)//设置未选中图标
-                      .setIconResSelected(iconResSelected)//设置选中图标
-                      .setTextRes(textRes)//设置文字
-                      .setSelected(0);//设置选中的位置
+       
+        mNavMenuLayout.setIconRes(iconRes)//设置未选中图标
+                .setIconResSelected(iconResSelected)//设置选中图标
+                .setTextRes(textRes)//设置文字
+                .setSelected(0);//设置选中的位置
 
      
 
