@@ -58,7 +58,7 @@
 注：
 
      setSelected(int position)方法一定要放在最后调用，因为在该方法中实现了刷新页面的功能，其他的几个方法都只是进行了赋值操作，
-     并没有刷新页面;
+     并没有刷新页面;
      
 #### 效果图
 
@@ -73,43 +73,43 @@
 
        mNavMenuLayout.setIconRes(iconRes)//设置未选中图标
                      .setIconResSelected(iconResSelected)//设置选中图标
-                     .setTextRes(textRes)//设置文字
-                     .setMsg(0, "99+")//设置显示消息
-                     .setMsg(1, "NEW")//设置显示消息
-                     .showRedPoint(2)//设置显示红点
-                     .setSelected(0);//设置选中的位置
+                     .setTextRes(textRes)//设置文字
+                     .setMsg(0, "99+")//设置显示消息
+                     .setMsg(1, "NEW")//设置显示消息
+                     .showRedPoint(2)//设置显示红点
+                     .setSelected(0);//设置选中的位置
                      
   注：
   
       setMsg(int position,String msg) 方法,第一个参数代表底部菜单的位置，第二个参数代表显示的内容
-       showRedPoint(int position)方法，参数代表底部菜单的位置
+      showRedPoint(int position)方法，参数代表底部菜单的位置
        
 ####  取消消息或红点提示
-    
-      mNavMenuLayout .hideMsg(0)//隐藏消息
-                      .hideMsg(1)//隐藏消息
-                      .hideRedPoint(2)//隐藏红点
+
+    mNavMenuLayout .hideMsg(0)//隐藏消息
+                   .hideMsg(1)//隐藏消息
+                   .hideRedPoint(2)//隐藏红点
                       
  注：
  
-      mNavMenuLayout .hideMsg(0)//隐藏消息
-                      .hideMsg(1)//隐藏消息
-                      .hideRedPoint(2)//隐藏红点
+     mNavMenuLayout .hideMsg(0)//隐藏消息
+                    .hideMsg(1)//隐藏消息
+                    .hideRedPoint(2)//隐藏红点
 #### 效果图
 
 ![](https://github.com/smashinggit/Android-NavMenuLayout-Master/blob/master/Screenshots/pic2.png)
 
 ## 3. 点击事件
 
-     mNavMenuLayout .hideMsg(0)//隐藏消息
-                      .hideMsg(1)//隐藏消息
-                      .hideRedPoint(2)//隐藏红点
+    mNavMenuLayout .hideMsg(0)//隐藏消息
+                   .hideMsg(1)//隐藏消息
+                   .hideRedPoint(2)//隐藏红点
                       
  注：
  
-      mNavMenuLayout .hideMsg(0)//隐藏消息
-                      .hideMsg(1)//隐藏消息
-                      .hideRedPoint(2)//隐藏红点
+     mNavMenuLayout .hideMsg(0)//隐藏消息
+                    .hideMsg(1)//隐藏消息
+                    .hideRedPoint(2)//隐藏红点
 #### 效果图
 
 ![](https://github.com/smashinggit/Android-NavMenuLayout-Master/blob/master/Screenshots/pic3.png)
