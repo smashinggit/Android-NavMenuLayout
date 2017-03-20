@@ -83,7 +83,7 @@
   
       setMsg(int position,String msg) 方法,第一个参数代表底部菜单的位置，第二个参数代表显示的内容
       showRedPoint(int position)方法，参数代表底部菜单的位置
-       
+      
 ####  取消消息或红点提示
 
     mNavMenuLayout .hideMsg(0)//隐藏消息
@@ -141,15 +141,16 @@
     
 ## 报错处理
 
-    假如在使用过程中出现了无法显示或者是显示效果不正确等问题，请查看Log,里面会有报错提示。
+   假如在使用过程中出现了无法显示或者是显示效果不正确等问题，请查看Log,里面会有报错提示。
     
-     例如：
-     
-     如果没有在xml中声明  app:menuCount="" 属性 或者是 属性的值 小于1 ,就会在LogCat中看到这样的提示：    
-     03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the menuCount mast greater than 0
-     03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the iconRes length is not equals count
-     03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the iconResSelected length is not equals count
-     03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the textRes length is not equals count
+   例如：
+   如果没有在xml中声明  app:menuCount="" 属性 或者是 属性的值 小于1 ,就会在LogCat中看到这样的提示： 
+    
+    
+      03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the menuCount mast greater than 0
+      03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the iconRes length is not equals count
+      03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the iconResSelected length is not equals count
+      03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the textRes length is not equals count
      
 ## 联系方式
     
