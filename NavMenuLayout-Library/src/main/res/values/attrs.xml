@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--底部导航菜单-->
+    <declare-styleable name="NavMenuLayout">
+        <!--菜单个数-->
+        <attr name="menuCount" format="integer" />
+    </declare-styleable>
+
+</resources>
