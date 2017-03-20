@@ -84,7 +84,7 @@
       setMsg(int position,String msg) 方法,第一个参数代表底部菜单的位置，第二个参数代表显示的内容
       showRedPoint(int position)方法，参数代表底部菜单的位置
       
-####  取消消息或红点提示
+#### 取消消息或红点提示
 
     mNavMenuLayout .hideMsg(0)//隐藏消息
                    .hideMsg(1)//隐藏消息
