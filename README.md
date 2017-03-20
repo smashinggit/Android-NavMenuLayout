@@ -72,7 +72,7 @@
 #### 显示消息或红点提示
 
        mNavMenuLayout.setIconRes(iconRes)//设置未选中图标
-                     .setIconResSelected(iconResSelected)//设置选中图标
+                     .setIconResSelected(iconResSelected)//设置选中图标
                      .setTextRes(textRes)//设置文字
                      .setMsg(0, "99+")//设置显示消息
                      .setMsg(1, "NEW")//设置显示消息
@@ -145,17 +145,16 @@
     
      例如：
      
-     如果没有在xml中声明  app:menuCount="" 属性 或者是 属性的值 小于1 ,就会在LogCat中看到这样的提示：
-     
+     如果没有在xml中声明  app:menuCount="" 属性 或者是 属性的值 小于1 ,就会在LogCat中看到这样的提示：    
      03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the menuCount mast greater than 0
-     03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the iconRes length is not equals count
-     03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the iconResSelected length is not equals count
-     03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the textRes length is not equals count
+     03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the iconRes length is not equals count
+     03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the iconResSelected length is not equals count
+     03-18 22:37:58.405 2518-2518/? E/NavMenuLayout: the textRes length is not equals count
      
 ## 联系方式
     
      如果在使用过程中有什么问题或者是意见，请联系我。谢谢大家！
      
-     qq: 2670469507
-     邮箱：smashing_chen@163.com
+     qq: 2670469507
+     邮箱：smashing_chen@163.com
    
