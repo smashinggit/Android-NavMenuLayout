@@ -24,9 +24,10 @@
 
 #### 第一步, 在xml文件中添加控件
 
-       在xml中的跟布局添加  xmxmlns:app="http://schemas.android.com/apk/res-auto"
-       
-        <com.git.navmenu.NavMenuLayout
+    在xml中的跟布局添加  xmxmlns:app="http://schemas.android.com/apk/res-auto"
+    
+    
+    <com.git.navmenu.NavMenuLayout
         android:id="@+id/nav_layout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -36,7 +37,6 @@
 
 注：
 
-    
      app:menuCount="3" 属性是必须要添加的，代表底部菜单的数量，此数值必须要与 Activity 中设置的图片资源，文字资源的数量一致，
      否则无法正常显示
       
@@ -79,7 +79,7 @@
                      .showRedPoint(2)//设置显示红点
                      .setSelected(0);//设置选中的位置
                      
-  注：
+注：
   
       setMsg(int position,String msg) 方法,第一个参数代表底部菜单的位置，第二个参数代表显示的内容
       showRedPoint(int position)方法，参数代表底部菜单的位置
@@ -90,26 +90,39 @@
                    .hideMsg(1)//隐藏消息
                    .hideRedPoint(2)//隐藏红点
                       
- 注：
+注：
  
-     mNavMenuLayout .hideMsg(0)//隐藏消息
-                    .hideMsg(1)//隐藏消息
-                    .hideRedPoint(2)//隐藏红点
+    hideMsg（int position）参数代表底部菜单位置
+    hideRedPoint（int position）同上
+    
 #### 效果图
 
 ![](https://github.com/smashinggit/Android-NavMenuLayout-Master/blob/master/Screenshots/pic2.png)
 
 ## 3. 点击事件
 
-    mNavMenuLayout .hideMsg(0)//隐藏消息
-                   .hideMsg(1)//隐藏消息
-                   .hideRedPoint(2)//隐藏红点
-                      
- 注：
- 
-     mNavMenuLayout .hideMsg(0)//隐藏消息
-                    .hideMsg(1)//隐藏消息
-                    .hideRedPoint(2)//隐藏红点
+     //选中的点击事件
+        mNavMenuLayout.setOnItemSelectedListener(new NavMenuLayout.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(int position) {
+                mViewPager.setCurrentItem(position);//选中后切换viwepager
+                Toast.makeText(MainActivity.this, "选中了-> " + textRes[position], Toast.LENGTH_SHORT).show();
+            }
+        });
+        //已选中状态下的点击事件
+        mNavMenuLayout.setOnItemReSelectedListener(new NavMenuLayout.OnItemReSelectedListener() {
+            @Override
+            public void onItemReSelected(int position) {
+                Toast.makeText(MainActivity.this, "重复选中了-> " + textRes[position], Toast.LENGTH_SHORT).show();
+            }
+        });
+        
+注：
+
+    点击事件分为2种：
+    setOnItemSelectedListener   代表的是当一个 item 由 未选中状态 变成 选中状态 时的回调
+    setOnItemReSelectedListener 代表的是当一个 item 已经是选中状态 并且 又点击该 item 时的回调
+    
 #### 效果图
 
 ![](https://github.com/smashinggit/Android-NavMenuLayout-Master/blob/master/Screenshots/pic3.png)
