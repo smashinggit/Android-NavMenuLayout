@@ -8,12 +8,10 @@
 
     allprojects {
        repositories {
-        ...
+              ...
         maven { url 'https://jitpack.io' }
-        }
-     }   
-        
-        
+    }
+
 #### 2. 在项目的 build.gradle 中添加
 
     compile 'com.github.smashinggit:Android-NavMenu-master:v1.0.2'
