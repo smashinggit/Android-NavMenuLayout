@@ -31,7 +31,6 @@
         android:id="@+id/nav_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         app:menuCount="3" />
 
 
