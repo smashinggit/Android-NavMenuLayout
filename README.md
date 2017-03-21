@@ -62,7 +62,7 @@
 #### 效果图
 
 
-![](https://github.com/smashinggit/Android-NavMenuLayout-Master/blob/master/Screenshots/pic1.png)
+![](https://github.com/smashinggit/Android-NavMenuLayout/blob/master/Screenshots/pic1.png)
 
 
 
@@ -96,7 +96,7 @@
     
 #### 效果图
 
-![](https://github.com/smashinggit/Android-NavMenuLayout-Master/blob/master/Screenshots/pic2.png)
+![](https://github.com/smashinggit/Android-NavMenuLayout/blob/master/Screenshots/pic2.png)
 
 ## 3. 点击事件
 
@@ -124,8 +124,8 @@
     
 #### 效果图
 
-![](https://github.com/smashinggit/Android-NavMenuLayout-Master/blob/master/Screenshots/pic3.png)
-![](https://github.com/smashinggit/Android-NavMenuLayout-Master/blob/master/Screenshots/pic4.png)
+![](https://github.com/smashinggit/Android-NavMenuLayout/blob/master/Screenshots/pic3.png)
+![](https://github.com/smashinggit/Android-NavMenuLayout/blob/master/Screenshots/pic4.png)
 
 
 ## 4. 更多个性化定制
