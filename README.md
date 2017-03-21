@@ -10,8 +10,8 @@
        repositories {
         ...
         maven { url 'https://jitpack.io' }
-      }
-    }
+       }
+     }
   
 #### 2. 在项目的 build.gradle 中添加
 
