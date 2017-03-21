@@ -15,7 +15,7 @@
 
 #### 2. 在项目的 build.gradle 中添加
 
-    compile 'com.github.smashinggit:Android-NavMenu-master:v1.0.2'
+     compile 'com.github.smashinggit:Android-NavMenuLayout:v1.0.0'
     
 # 如何使用
 
