@@ -30,7 +30,7 @@
     <com.git.navmenu.NavMenuLayout
         android:id="@+id/nav_layout"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:menuCount="3" />
 
